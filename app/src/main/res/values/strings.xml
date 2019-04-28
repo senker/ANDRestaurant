@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ANDRestaurant</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="account">Account</string>
+    <string name="logout"></string>
+</resources>
