@@ -43,4 +43,13 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     //google maps
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    // firebase core
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    //firebase auth
+    implementation 'com.google.firebase:firebase-auth:16.2.1'
+    //firabase storage
+    implementation 'com.google.firebase:firebase-storage:16.1.0'
+
 }
+// google services plugin
+apply plugin: 'com.google.gms.google-services'

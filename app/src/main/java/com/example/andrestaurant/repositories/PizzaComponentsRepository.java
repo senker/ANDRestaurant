@@ -22,7 +22,6 @@ public class PizzaComponentsRepository {
         }
         return instance;
     }
-    // pretend to get data from a webservice or online source
     public MutableLiveData<List<PizzaComponents>> getPizzaComponents()
     {
         // retrieve data from webservice
@@ -37,33 +36,30 @@ public class PizzaComponentsRepository {
     private void setPizzaComponents()
     {
         dataSet.add(
-                new PizzaComponents("https://c1.staticflickr.com/5/4636/25316407448_de5fbf183d_o.jpg",
-                        "Havasu Falls")
+                new PizzaComponents("https://cdn-image.foodandwine.com/sites/default/files/styles/medium_2x/public/200703-r-xl-perfect-pizza-margherita.jpg?itok=aX-nsHDP",
+                        "Margarita")
         );
         dataSet.add(
-                new PizzaComponents("https://i.redd.it/tpsnoz5bzo501.jpg",
-                        "Trondheim")
+                new PizzaComponents("https://img.stpu.com.br/?img=https://s3.amazonaws.com/pu-mgr/default/a0R0f00000xpZ9zEAE/5a971cdae4b0d5230b707b28.jpg&w=620&h=400",
+                        "Napolitana")
         );
         dataSet.add(
-                new PizzaComponents("https://i.redd.it/qn7f9oqu7o501.jpg",
-                        "Portugal")
+                new PizzaComponents("https://media-cdn.tripadvisor.com/media/photo-s/13/18/3b/06/pizza-capricciosa.jpg",
+                        "Capriciosa")
         );
         dataSet.add(
-                new PizzaComponents("https://i.redd.it/j6myfqglup501.jpg",
-                        "Rocky Mountain National Park")
+                new PizzaComponents("https://papasitalianrecipes.com/wp-content/uploads/2014/02/quattro-formaggio.jpg",
+                        "4 Cheeses")
         );
 
         dataSet.add(
-                new PizzaComponents("https://i.redd.it/k98uzl68eh501.jpg",
-                        "Mahahual")
+                new PizzaComponents("https://s3-media4.fl.yelpcdn.com/bphoto/_pUy9RMXKrQtEkMVXp9xDA/o.jpg",
+                        "Diablo")
         );
         dataSet.add(
-                new PizzaComponents("https://c1.staticflickr.com/5/4636/25316407448_de5fbf183d_o.jpg",
-                        "Frozen Lake")
+                new PizzaComponents("https://assets3.thrillist.com/v1/image/2783327/size/tmg-article_default_mobile.jpg",
+                        "Pepperoni")
         );
-        dataSet.add(
-                new PizzaComponents("https://i.redd.it/obx4zydshg601.jpg",
-                        "Austrailia")
-        );
+
     }
 }

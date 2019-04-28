@@ -25,6 +25,7 @@
             android:layout_weight="1"
             android:background="@drawable/pizza" />
         <ImageView
+            android:id="@+id/salad"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/salad"
@@ -40,12 +41,14 @@
         android:layout_weight="1"
         android:background="#ffe796">
         <ImageView
+            android:id="@+id/soup"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/soup"
             android:layout_weight="1"
             android:layout_margin="20dp"/>
         <ImageView
+            android:id="@+id/cake"
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -59,6 +62,7 @@
         android:layout_weight="1"
         android:background="#ffe796">
         <ImageView
+            android:id="@+id/beverage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/beverages"

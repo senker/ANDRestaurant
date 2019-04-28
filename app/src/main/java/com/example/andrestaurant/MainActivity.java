@@ -3,6 +3,7 @@ package com.example.andrestaurant;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
+import android.media.Image;
 import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
 import android.support.design.widget.CoordinatorLayout;
@@ -21,6 +22,7 @@ import android.widget.ImageView;
 import com.example.andrestaurant.adapters.PizzaAdapter;
 import com.example.andrestaurant.models.PizzaComponents;
 import com.example.andrestaurant.viewmodels.PizzaActivityViewModel;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.List;
 
@@ -31,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navigation;
     //categories ids
     private ImageView pizza;
+    private ImageView salad;
+    private ImageView soup;
+    private ImageView cake;
+    private ImageView beverage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,9 +55,42 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //aboutus intent
-
-
+        //salad intent
+        salad = findViewById(R.id.salad);
+        salad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, saladActivity.class);
+                startActivity(intent);
+            }
+        });
+        //soup intent
+        soup = findViewById(R.id.soup);
+        soup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, soupActivity.class);
+                startActivity(intent);
+            }
+        });
+        //cake intent
+        cake = findViewById(R.id.cake);
+        cake.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, cakeActivity.class);
+                startActivity(intent);
+            }
+        });
+        //beverage intent
+        beverage = findViewById(R.id.beverage);
+        beverage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BeverageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
     // method for nav
     @Override
@@ -83,22 +122,20 @@ public class MainActivity extends AppCompatActivity {
                         Intent i = new Intent(MainActivity.this, aboutusActivity.class);
                         startActivity(i);
                         break;
-//                    case R.id.navigation_item_2:
-//                        //Do some thing here
-//                        // add navigation drawer item onclick method here
-//                        break;
-//                    case R.id.navigation_item_3:
-//                        //Do some thing here
-//                        // add navigation drawer item onclick method here
-//                        break;
-//                    case R.id.navigation_item_4:
-//                        //Do some thing here
-//                        // add navigation drawer item onclick method here
-//                        break;
-//                    case R.id.navigation_item_5:
-//                        //Do some thing here
-//                        // add navigation drawer item onclick method here
-//                        break;
+                    case R.id.register:
+                        Intent e = new Intent(MainActivity.this, RegisterActivity.class);
+                        startActivity(e);
+                        break;
+                    case R.id.login:
+                        Intent d = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(d);
+                        break;
+                    case R.id.signout:
+                        FirebaseAuth.getInstance().signOut();
+                        Intent f = new Intent(MainActivity.this, MainActivity.class);
+                        startActivity(f);
+                        break;
+
                 }
                 return false;
             }

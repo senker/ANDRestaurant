@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "151625800396",
+    "firebase_url": "https://andproject-96450.firebaseio.com",
+    "project_id": "andproject-96450",
+    "storage_bucket": "andproject-96450.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151625800396:android:4d39d26305914b7b",
+        "android_client_info": {
+          "package_name": "com.example.andrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151625800396-jg0k64gppqfpvbtf4e31gfhuols5q6ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpHpuAScUtvYUIcc7tOJElEuqGvF_v0xQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151625800396-jg0k64gppqfpvbtf4e31gfhuols5q6ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

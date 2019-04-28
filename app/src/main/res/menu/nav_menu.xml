@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/categories"
-        android:title="Categories"></item>
+
     <item android:id="@+id/basket"
-        android:title="Basket"></item>
+        android:title="Basket"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"></item>
     <item android:id="@+id/aboutus"
-        android:title="About us"></item>
+        android:title="About us"
+        android:icon="@drawable/ic_info_black_24dp"></item>
     <item android:title="@string/account">
         <menu>
             <item android:id="@+id/login"
-                android:title="Login"></item>
-            <item android:id="@+id/settings"
-                android:title="Settings"></item>
+                android:title="Login"
+                android:icon="@drawable/ic_input_black_24dp"></item>
+            <item android:id="@+id/register"
+                android:title="Register"
+                android:icon="@drawable/ic_account_circle_black_24dp"></item>
         </menu>
     </item>
     <item android:title="@string/logout">
         <menu>
-            <item android:id="@+id/logout"
-                android:title="LogOut"></item>
+            <item android:id="@+id/signout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Signout"></item>
         </menu>
     </item>
 </menu>
