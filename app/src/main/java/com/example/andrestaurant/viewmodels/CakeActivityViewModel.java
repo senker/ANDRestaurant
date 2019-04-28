@@ -13,7 +13,6 @@ import java.util.List;
 public class CakeActivityViewModel extends ViewModel {
     private MutableLiveData<List<CakeComponents>> mCakeComponents;
     private CakeComponentsRepository mRepo;
-//    private MutableLiveData<Boolean> mIsUpdating = new MutableLiveData<>();
 
     public void init(){
         if (mCakeComponents != null)

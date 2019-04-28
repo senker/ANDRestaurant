@@ -91,7 +91,7 @@ public class RegisterActivity extends AppCompatActivity {
                 {
                     // something goes wrong : all fields must be filled
                     // we need to display an error message
-                    showMessage("Please Verify all fields");
+                    showMessage("Please Verify All Fields");
                     regBtn.setVisibility(View.VISIBLE);
                     loadingProgress.setVisibility(View.INVISIBLE);
 

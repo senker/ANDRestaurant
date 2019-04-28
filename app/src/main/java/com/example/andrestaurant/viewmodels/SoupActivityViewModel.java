@@ -14,7 +14,6 @@ import java.util.List;
 public class SoupActivityViewModel extends ViewModel {
     private MutableLiveData<List<SoupComponents>> mSoupComponents;
     private SoupComponentsRepository mRepo;
-//    private MutableLiveData<Boolean> mIsUpdating = new MutableLiveData<>();
 
     public void init(){
         if (mSoupComponents != null)
